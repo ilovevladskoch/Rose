@@ -1,0 +1,470 @@
+@import "./reset.css";
+
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Medium.woff') format('woff'), url('../fonts/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Bold.woff') format('woff'), url('../fonts/CircularStd-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Book.woff') format('woff'), url('../fonts/CircularStd-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/ProximaNova-Regular.woff") format('woff'), url("../fonts/ProximaNova-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/ProximaNova-Bold.woff") format('woff'), url("../fonts/ProximaNova-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}  
+
+
+
+body {
+    background-color: #FCFCFC;
+}
+
+/* Font style */
+
+h1 {
+    font-family: 'Circular Std';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: #56597A;
+}
+
+h2 {
+    font-family: 'Circular Std';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 72px;
+    color: #56597A;
+}
+
+h4 {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 72px;
+    color: #56597A;
+}
+
+h5 {
+    font-family: 'Circular Std';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #F78CB6;
+}
+
+h6 {
+    font-family: 'Circular Std';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #56597A;
+}
+
+p {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #919299;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Navi header menu */
+
+.header__navi {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigations {
+    display: flex;
+    column-gap: 75px;
+    font-family: 'Circular Std';
+    font-weight: 500;
+}
+
+.navigations a {
+    font-family: inherit;
+    font-weight: inherit;
+    color: #AAAAAB;
+    transition: 0.3s;
+}
+
+.navigations a:hover {
+    color: #56597A;
+}
+
+/* Welcome first */
+
+.content {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h5.welcome::before {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 3px;
+    background: #F78CB6;
+    margin-right: 10px;
+}
+
+h5.welcome {
+    margin-bottom: 30px;
+}
+
+.content__text__block p {
+    margin: 45px 0;
+}
+
+/* Button */
+
+.btn {
+    background: #F78CB6;
+    padding: 18px 22px;
+    color: #FCFCFC;
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    border-radius: 4px;
+}
+
+.btn a {
+    color: inherit;
+}
+
+.btn::after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 20px;
+    width: 44px;
+    height: 33px;
+    background: url("../img/icon/btn-arrow.svg") center no-repeat;
+}
+
+/* Main content */
+
+.card__header {
+    text-align: center;
+    margin: 120px 0 60px;
+}
+
+.card__header h1 {
+    font-size: 52px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sample__card {
+    max-width: 270px;
+    text-align: center;
+    padding: 50px 23px;
+    background: #FFF1F9;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sample__card:hover {
+    background: #F78CB6;
+}
+
+.sample__card:hover p,
+.sample__card:hover h4,
+.sample__card:hover svg
+ {
+    color: #fff;
+    fill: #fff;
+}
+
+.icon__card {
+    margin-bottom: 38px;
+    fill: #FC85B4;
+}
+
+.sample__card:hover {
+    fill: #fff;
+}
+
+.sample__card p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content__info {
+    margin: 200px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.content__text h1 {
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.content__text h5 {
+    margin-bottom: 15px;
+}
+
+.content__info p {
+    margin: 40px 0;
+}
+
+.testimonial__content {
+    display: flex;
+    max-width: 1070px;
+    column-gap: 135px;
+    align-items: center;
+}
+
+.testimonial__content {
+    filter: drop-shadow(20px 20px 40px rgba(250, 141, 184, 0.15));
+}
+
+.content__text p {
+    margin: 40px 0;
+}
+
+.name {
+    color: #56597A;
+    margin-bottom: 5px;
+}
+
+p.sub__name {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ABABAB;
+    margin: 0;
+}
+
+.logo__brand {
+    margin: 200px 0 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe__block {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe__text__block {
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe__block p {
+    max-width: 635px;
+    margin: 25px 0 35px;  
+}
+
+/* Form */
+
+.form__email__type__1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.form__email {
+    width: 700px;
+    padding: 14px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(20px 20px 40px rgba(205, 205, 205, 0.25));
+}
+
+input::placeholder{
+    color: #D2D2D2;
+}
+.you__email {
+    width: 100%;
+    margin-right: 10px;
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #919299;
+}
+
+.input__mail{
+    column-gap: 10px;
+    width: 70%;
+    display: flex; 
+    align-items: center;
+}
+
+/* Footer */
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.column__1 p {
+    max-width: 290px;
+    margin: 40px 0;
+}
+
+p.follow {
+    margin: 0 0 15px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #919299;
+}
+
+.footer__columns h6 {
+    margin-bottom: 40px;
+}
+
+.footer__columns li {
+    padding-bottom: 25px;
+}
+
+.footer__nav {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #919299;
+}
+
+.footer__nav a {
+    color: inherit;
+    transition: 0.3s;
+}
+
+.footer__nav a:hover {
+    color: inherit;
+    color: #56597A;
+}
+
+.rights {
+    font-family: 'Circular Std';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.reserv {
+    background: #F78CB6;
+    padding: 12px 0;
+}
+
+/* Social icon footer*/
+
+.social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social__icon {
+    width: 41px;
+    height: 41px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #A7A7A7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social__icon:hover {
+    color: #F78CB6;
+}
+
+/* Background images */
+
+footer {
+    background-image: url("../img/background-image/background-footer.png");
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+header {
+    background-image: url("../img/background-image/background-header.png") ;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.subscribe {
+    background-image: url("../img/background-image/message.png") ;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 200px 0px;
+}
+
+.our__teamwork {
+    background-image: url("../img/background-image/figure.png") ;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: -200px bottom;
+}
+
+.design__things {
+    background-image: url("../img/background-image/figure.png") ;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 1750px top;
+}
